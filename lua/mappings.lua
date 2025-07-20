@@ -56,6 +56,8 @@ map("n", "<C-t>", function()
   require("nvchad.themes").open { style = "compact" }
 end, {})
 
+map("n", "<S-l>", "<Cmd>Lazy sync<CR>", { desc = "Open lazyvim panel" })
+
 map("n", "<leader>qs", function()
   require("persistence").load()
 end)
